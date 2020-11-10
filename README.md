@@ -5,7 +5,7 @@ This is a random quote project which  was generated with [Angular CLI](https://g
 
 
 ## Live DEMO
-You can find the working example here: [https://robaa2168.github.io/pizzaInn/.]
+You can find the working example here: [https://robaa2168.github.io/quote-app/]
 ## Author
 
 * [ROBERT KIPKOECH]()
