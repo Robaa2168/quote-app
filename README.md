@@ -5,6 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Live DEMO
 You can find the working example here: [https://robaa2168.github.io/pizzaInn/.]
+## Author
+
+* [ROBERT KIPKOECH]()
 
 ## Development server
 
