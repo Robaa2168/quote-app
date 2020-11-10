@@ -20,6 +20,7 @@ export class DateAgoPipe implements PipeTransform {
               'minute': 60,
               'second': 1
           };
+  let counter;
           for (const i in intervals) {
               counter = Math.floor(seconds / intervals[i]);
               if (counter > 0)
