@@ -1,7 +1,8 @@
 
 # Quote
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+This is a random quote project which  was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+
 
 ## Live DEMO
 You can find the working example here: [https://robaa2168.github.io/pizzaInn/.]
