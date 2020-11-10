@@ -1,0 +1,42 @@
+
+              <!-- Form -->
+              <form class="" style="color: #757575;" (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+                <div class="text-sm mt-2">
+                  <ul class="list-unstyled li-space-lg white">
+                    <li class="media">
+                      <i class="fas fa-square"></i>
+                      <div class="media-body">Take time post your favourite quote</div>
+                    </li>
+                    <li class="media">
+                      <i class="fas fa-square"></i>
+                      <div class="media-body">All fields should be filled</div>
+                    </li>
+                    <li class="media">
+                      <i class="fas fa-square"></i>
+                      <div class="media-body">click submit to post</div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="md-form mt-3">
+                   <textarea type="text" rows="1" class="form-control" placeholder="Authors Name" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required></textarea>
+                      <div [hidden]="name.valid || name.pristine" class="alert alert-warning" >
+                         <p>Please add original author's name</p>
+                     </div>
+                  </div>
+             <textarea class="form-control" id="submitter" rows="1"placeholder="Your Name" [(ngModel)]="newQuote.submitter" name="submitter" #description="ngModel" required></textarea>
+                   <div [hidden]="description.valid || description.pristine" class="alert alert-warning" >
+                        <p> Please add your name</p>
+                      </div>
+                
+                <div class="md-form">
+                  <textarea class="form-control" id="description" placeholder="Quote" rows="5" [(ngModel)]="newQuote.description" name="quote" #description="ngModel" required></textarea>
+                      <div [hidden]="description.valid || description.pristine" class="alert alert-warning" >
+                        <p> Quote Required</p>
+                  </div>
+                </div>
+                <br>
+            <input type="submit" class="btn btn-white btn-rounded blue-text font-weight-bold ml-lg-0 wow fadeIn waves-effect waves-light z-depth-3 text-center" data-wow-delay="0.3s"
+                  style="visibility: visible; animation-name: fadeIn; animation-delay: 0.3s;" value="Submit" >
+      </form>
+      

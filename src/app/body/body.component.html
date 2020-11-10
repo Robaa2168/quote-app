@@ -1,0 +1,35 @@
+
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-md-8 mb-4">
+          <div class="card default-color-dark  z-depth-6">
+            <div class="view" >
+              <div class="card mb-2" id="crd" *ngFor='let Quote of quotes;let i = index'>
+                  <div class="card-header"></div>
+                  <div class="card-body">
+                      <h5 class="card-title">{{Quote.name}}</h5>
+                      <p class="card-text">{{Quote.description}}</p>
+                      <button type="button" (click)="showDetails(i)" class="btn btn-primary">more</button>
+                  </div>           
+                <div class="card-footer text-muted" ><p>Posted by {{Quote.submitter}}, {{Quote.completeDate|dateAgo}}</p></div>
+               <div class="float-right"> 
+                <app-details  [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-details>
+              </div>
+             </div>    
+          </div>
+        </div>
+      </div>
+
+        <div class="col-md-4 mb-4 z-depth-5">
+          <div class="card mask rgba-white-slight">
+               <h5 class="card-header info-color white-text text-center py-4">
+              <strong>Post Now</strong>
+            </h5>
+            <div class="card-body clearfix  px-lg-5 pt-0">
+              
+              <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form> 
+
+            </div>
+          </div>
+        </div>
+      </div>
